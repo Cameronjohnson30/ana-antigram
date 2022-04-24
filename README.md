@@ -15,6 +15,7 @@ _This program takea an inputted a word or sentence and compares it to another in
 ## Setup/Installation Requirements
 
 _Clone or download the repository to your desktop._
+_Open in a code reader/writer i use vscode_ 
 _run bundle install_ 
 _run ruby lib/ana_scripts.rb_
 
