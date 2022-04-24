@@ -14,4 +14,14 @@ class Words
       false
     end
   end
+
+  def is_antigram(word1, word2)
+    a = word1.downcase.split("")
+    b = word2.downcase.split("") 
+    if !(a & b).empty? == true 
+      p "These words are neither an anagram or antigram"
+    else  !(a & b).empty? == false 
+      p "These words have no letter matches and are antigrams."
+    end
+  end
 end
