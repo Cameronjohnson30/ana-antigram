@@ -6,4 +6,12 @@ class Words
       false
     end
   end
+
+  def is_anagram(word1, word2)
+    if word1.downcase.chars.sort.join.gsub(/[^a-z ]/, '') == word2.downcase.chars.sort.join.gsub(/[^a-z ]/, '')
+      p "These words are anagrams."
+    else
+      false
+    end
+  end
 end

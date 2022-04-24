@@ -26,6 +26,6 @@ describe("Words#is_anagram") do
     expect(words.is_anagram("The Morse Code", "Here come dots!")).to(eq("These words are anagrams."))
   end  
   it("returns false if word1 and word2 are not anagrams") do
-    expect(words.is_anagram("Tea", "eat")).to(eq(false))
+    expect(words.is_anagram("Tea", "pea")).to(eq(false))
   end
 end
