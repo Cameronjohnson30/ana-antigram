@@ -29,3 +29,13 @@ describe("Words#is_anagram") do
     expect(words.is_anagram("Tea", "pea")).to(eq(false))
   end
 end
+
+describe("Words#is_antigram") do
+  it("returns a print if any letter in word1 matches a letter in word2") do
+    expect(words.is_antigram("hi", "it")).to(eq("These words are neither an anagram or antigram"))
+  end
+  it("returns a print if any letter in word1 does not matches a letter in word2") do
+    expect(words.is_antigram("hope", "it")).to(eq("These words have no letter matches and are antigrams."))
+  end
+end
+
