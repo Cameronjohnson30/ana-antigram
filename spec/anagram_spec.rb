@@ -17,3 +17,15 @@ end
     expect(words.is_word("whp", "whp")).to(eq(false))
   end
 end
+
+describe("Words#is_anagram") do
+  it("returns true if word1 and word2 are anagrams") do
+    expect(words.is_anagram("Tea", "eat")).to(eq("These words are anagrams."))
+  end
+  it("returns true if word1 and word2 are anagrams") do
+    expect(words.is_anagram("The Morse Code", "Here come dots!")).to(eq("These words are anagrams."))
+  end  
+  it("returns false if word1 and word2 are not anagrams") do
+    expect(words.is_anagram("Tea", "eat")).to(eq(false))
+  end
+end
